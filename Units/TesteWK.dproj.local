@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/01/09 18:05:58.000.056,=C:\Users\lorde\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/01 10:14:42.000.813,=C:\Users\lorde\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/24 19:17:34.000.655,=C:\Users\lorde\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/02/27 08:50:49.000.560,=C:\Users\lorde\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/03/16 11:23:22.000.189,=C:\Users\lorde\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/09/13 13:50:03.000.631,=C:\Users\lorde\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2024/08/04 11:05:46.000.192,=C:\Users\lorde\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2024/08/04 11:06:32.000.898,C:\Users\lorde\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\lorde\Desktop\Teste Delphi\uPrincipal.pas</Transaction>
+    <Transaction>2024/08/04 11:06:32.000.898,C:\Users\lorde\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\lorde\Desktop\Teste Delphi\uPrincipal.dfm</Transaction>
+    <Transaction>2024/08/04 11:06:43.000.454,C:\Users\lorde\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\lorde\Desktop\Teste Delphi\TesteWK.dproj</Transaction>
+    <Transaction>2024/08/04 11:07:07.000.237,=C:\Users\lorde\Desktop\Teste Delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/04 11:08:33.000.362,=C:\Users\lorde\Desktop\Teste Delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/04 11:08:50.000.672,C:\Users\lorde\Desktop\Teste Delphi\Unit1.dfm=C:\Users\lorde\Desktop\Teste Delphi\uDM.dfm</Transaction>
+    <Transaction>2024/08/04 11:08:50.000.672,C:\Users\lorde\Desktop\Teste Delphi\Unit1.pas=C:\Users\lorde\Desktop\Teste Delphi\uDM.pas</Transaction>
+    <Transaction>2024/08/04 11:09:03.000.471,=C:\Users\lorde\Desktop\Teste Delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/04 11:09:31.000.089,C:\Users\lorde\Desktop\Teste Delphi\Unit1.pas=C:\Users\lorde\Desktop\Teste Delphi\uPedidos.pas</Transaction>
+    <Transaction>2024/08/04 11:09:31.000.089,C:\Users\lorde\Desktop\Teste Delphi\Unit1.dfm=C:\Users\lorde\Desktop\Teste Delphi\uPedidos.dfm</Transaction>
+    <Transaction>2024/08/04 15:15:16.000.283,=C:\Users\lorde\Desktop\Teste Delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/04 15:15:48.000.671,C:\Users\lorde\Desktop\Teste Delphi\uConsultaPedidos.dfm=C:\Users\lorde\Desktop\Teste Delphi\Unit1.dfm</Transaction>
+    <Transaction>2024/08/04 15:15:48.000.671,C:\Users\lorde\Desktop\Teste Delphi\uConsultaPedidos.pas=C:\Users\lorde\Desktop\Teste Delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/04 17:04:51.000.186,=C:\Users\lorde\Desktop\Teste Delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/04 17:05:21.000.065,C:\Users\lorde\Desktop\Teste Delphi\uConsultaClientes.dfm=C:\Users\lorde\Desktop\Teste Delphi\Unit1.dfm</Transaction>
+    <Transaction>2024/08/04 17:05:21.000.065,C:\Users\lorde\Desktop\Teste Delphi\uConsultaClientes.pas=C:\Users\lorde\Desktop\Teste Delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/04 17:55:54.000.887,=C:\Users\lorde\Desktop\Teste Delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/04 17:57:08.000.835,C:\Users\lorde\Desktop\Teste Delphi\uConsultaProdutos.pas=C:\Users\lorde\Desktop\Teste Delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/04 17:57:08.000.835,C:\Users\lorde\Desktop\Teste Delphi\uConsultaProdutos.dfm=C:\Users\lorde\Desktop\Teste Delphi\Unit1.dfm</Transaction>
+    <Transaction>2024/08/04 19:04:45.000.081,C:\Users\lorde\Desktop\Teste Delphi\uConsultaClientes.pas=</Transaction>
+    <Transaction>2024/08/05 08:12:43.409,=C:\Users\lorde\Desktop\Teste Delphi\uConsultaClientes.pas</Transaction>
+  </Transactions>
+</BorlandProject>
