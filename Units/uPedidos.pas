@@ -211,26 +211,28 @@ begin
   LimparPedido;
 end;
 
+//----------------------------------------------------------------------------//
+//VALIDA OS DADOS ANTES DE GRAVAR
 function TfPedidos.validaDados : Boolean;
 begin
   try
     if ((edtCodigo.Text = EmptyStr) or (edtCodigo.Text = '0')) then
       begin
-        Application.MessageBox('Informe o cÛdigo do produto!','AtenÁ„o',MB_ICONINFORMATION);
+        Application.MessageBox('Informe o c√≥digo do produto!','Aten√ß√£o',MB_ICONINFORMATION);
         if edtCodigo.CanFocus then edtCodigo.SetFocus;
         Result := False;
         Exit;
       end;
     if ((edtQtde.Text = EmptyStr) or (edtQtde.Text = '0')) then
       begin
-        Application.MessageBox('Informe uma quantidade v·lida!','AtenÁ„o',MB_ICONINFORMATION);
+        Application.MessageBox('Informe uma quantidade v√°lida!','Aten√ß√£o',MB_ICONINFORMATION);
         if edtQtde.CanFocus then edtQtde.SetFocus;
         Result := False;
         Exit;
       end;
     if ((edtValor.Text = EmptyStr) or (edtValor.Text = '0')) then
       begin
-        Application.MessageBox('Informe o valor unit·rio!','AtenÁ„o',MB_ICONINFORMATION);
+        Application.MessageBox('Informe o valor unit√°rio!','Aten√ß√£o',MB_ICONINFORMATION);
         if edtValor.CanFocus then edtValor.SetFocus;
         Result := False;
         Exit;
@@ -242,6 +244,8 @@ begin
   end;
 end;
 
+//----------------------------------------------------------------------------//
+//INSERE O PRODUTO NO CLIENTDATASET TEMPOR√ÅRIO
 procedure TfPedidos.btnInserirClick(Sender: TObject);
 var Total : Real;
 begin
@@ -279,6 +283,8 @@ begin
   end;
 end;
 
+//----------------------------------------------------------------------------//
+//CALCULA O VALOR TOTAL DO PEDIDO
 function TfPedidos.CalcValorTotalPedido: Real;
 var TotalPedido: real;
     iPos : Integer;
@@ -306,6 +312,8 @@ begin
   end;
 end;
 
+//----------------------------------------------------------------------------//
+//ABRE A JANELA DE CONSULTA DE PRODUTOS
 procedure TfPedidos.ConsultaProdutos;
 begin
   try
@@ -334,6 +342,8 @@ begin
   end;
 end;
 
+//----------------------------------------------------------------------------//
+//ABRE A JANELA DE CONSULTA DE CLIENTES
 procedure TfPedidos.ConsultaClientes;
 begin
   try
@@ -359,6 +369,8 @@ begin
   end;
 end;
 
+//----------------------------------------------------------------------------//
+//CARREGA OS DADOS DO CLIENTE
 procedure TfPedidos.CarregaCliente;
 var sSql : String;
 begin
@@ -372,7 +384,7 @@ begin
         DM.qryAuxiliar1.Open(sSql);
         if DM.qryAuxiliar1.IsEmpty then
           begin
-            Application.MessageBox('Cliente n„o encontrado!','AtenÁ„o',MB_ICONINFORMATION);
+            Application.MessageBox('Cliente n√£o encontrado!','Aten√ß√£o',MB_ICONINFORMATION);
             if edtCliente.CanFocus then edtCliente.SetFocus;
             Exit;
           end
@@ -390,7 +402,8 @@ begin
   end;
 end;
 
-
+//----------------------------------------------------------------------------//
+//CARREGA OS DADOS DO PRODUTO
 procedure TfPedidos.CarregaProduto;
 var sSql : String;
 begin
@@ -404,7 +417,7 @@ begin
         DM.qryAuxiliar1.Open(sSql);
         if DM.qryAuxiliar1.IsEmpty then
           begin
-            Application.MessageBox('Produto n„o encontrado!','AtenÁ„o',MB_ICONINFORMATION);
+            Application.MessageBox('Produto n√£o encontrado!','Aten√ß√£o',MB_ICONINFORMATION);
             edtValor.Enabled := False;
             edtQtde.Enabled  := False;
             if edtCodigo.CanFocus then edtCodigo.SetFocus;
@@ -478,7 +491,7 @@ end;
 
 procedure TfPedidos.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-  //LIBERA O FORMUL¡RIO DA MEM”RIA
+  //LIBERA O FORMUL√ÅRIO DA MEM√ìRIA
   Action  := caFree;
   fPedidos := nil;
 end;
@@ -502,7 +515,7 @@ begin
       if edtCodigo.CanFocus then edtCodigo.SetFocus;
     except
       on E: Exception do
-        Application.messagebox('Erro ao abrir a ediÁ„o do produto!','Erro',MB_ICONERROR);
+        Application.messagebox('Erro ao abrir a edi√ß√£o do produto!','Erro',MB_ICONERROR);
     end;
 end;
 
@@ -519,7 +532,7 @@ begin
 
   if key = VK_DELETE then
     begin
-      if DM.confirma('Confirma exclus„o deste produto?') then
+      if DM.confirma('Confirma exclus√£o deste produto?') then
         begin
           DM.dtstmpProdutosPedidos.DataSet.Delete;
           pnlTotalPedido.Caption := 'Valor Total : R$ '+FormatFloat('0.00',CalcValorTotalPedido);
